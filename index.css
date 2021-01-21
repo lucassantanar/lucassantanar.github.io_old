@@ -20,17 +20,21 @@ p {
     text-align: justify;
 }
 
-   @keyframes pisca{
-       0%, 100%{
-           opacity: 1;
-       }
-       50%{
-           opacity: 0;
-       }
-   }
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+       opacity: 0;
+    }
+}
 
-   div {
-    padding: 5px;
+div {
+    padding: 2px;
+}
+
+h1{
+    /*  */
 }
 
 .div-topo {
@@ -54,17 +58,33 @@ p {
     font-size: 140%;
 }
 
-.texto-principal:after{
+.texto-principal:after {
     content: '.';
     margin-left: 5px;
     opacity: 1;
     animation: pisca .7s infinite;
-   }
+}
 
+.texto-card-centro {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.titulo-secundario {
+    max-width: 480px;
+    text-align: center;
+    margin: 40px auto;
+    color:#212529;
+    font-family: 'Yusei Magic', sans-serif;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    font-size: 140%;
+}
 .todo-centro {
 
     padding-left: 15%;
     padding-right: 15%;
+    /* height: 100%; */
 
 }
 
@@ -103,43 +123,43 @@ p {
     border-bottom:  20px; 
     color:rgba(0, 253, 135, 0.932);
     
- }
+}
 
 .fa-facebook-square  {
     color:rgba(0, 253, 0, 0.911)
  }
 
- .fa-facebook-square:hover  {
+.fa-facebook-square:hover  {
     border-bottom:  20px; 
     color:rgba(0, 253, 135, 0.932);
     
- } 
+} 
 
- .fa-linkedin  {
+.fa-linkedin  {
     color:rgba(0, 253, 0, 0.911)
- }
+}
 
- .fa-linkedin:hover  {
+.fa-linkedin:hover  {
     border-bottom:  20px; 
     color:rgba(0, 253, 135, 0.932);
     
- }
+}
 .fa-github  {
     color:rgba(0, 253, 0, 0.911)
  }
 
- .fa-github:hover  {
+.fa-github:hover  {
     border-bottom:  20px; 
     color:rgba(0, 253, 135, 0.932);
     
- } 
+} 
 
 .icones-rede-social {
     height: 70%;
     align-items: center
 }
 
- div.icones-rede-social i {
+div.icones-rede-social i {
     margin: 3%;
     
 }
