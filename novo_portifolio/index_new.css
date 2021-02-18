@@ -1,9 +1,11 @@
 html, body {
     width: 0;
     height: 0;
-    background:#151956;
+    background: #151956;
     margin-top: 8vh;
     margin-left: 9vw;
+
+
 }   
 
 .container {
@@ -13,37 +15,72 @@ html, body {
     margin: 15%;
 
     grid-template-columns: 35fr 25fr 25fr 25fr;
-    grid-template-rows: 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+    grid-template-rows: 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
 
-    grid-gap: 5px;
+    /* grid-gap: 5px; */
 
-    grid-template-areas: ". . . ."
+    grid-template-areas: ". . l l"
                          "s t t t"
                          "s t t t"
-                         "s t t t"
-                         "s t t t"
-                         "s t t t"
-                         "s t t t"
-                         "s t t t"
-                         "s t t t"
-                         "s t t t";
+                         "i t t t"
+                         "m t t t"
+                         "m p p p"
+                         "m p p p"
+                         "m p p p"
+                         "r p p p"
+                         "r p p p";
 }
 
+
+/* Estilização div's sobre */
 
 .sobre {
     grid-area: s;
     background: white;
     border-top-left-radius: 15px;
+}
+
+.sobre-info {
+    grid-area: i;
+    background: white;
+    padding-top: 4px;
+}
+
+
+.icone-rs {
+    grid-area: m;
+    background: white;
+}
+
+.icone-rs > p {
+    padding-top: 3vh;
+    position: relative;
+    text-align: center;
+}
+
+.rodape-sobre {
+    grid-area: r;
+    background: white;
     border-bottom-left-radius: 15px;
 }
 
+/* Estilização Div's sobre tecnologias e projetos */
+
 .tec { 
     grid-area: t;
-    border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     background-color: rgba(255, 255, 255, 0.1);
     position: relative;
 }
+
+.projetos { 
+    grid-area: p;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+/* Estilização do avatar */
 
 .avatar {
     background-color: #aaa; 
@@ -63,8 +100,8 @@ html, body {
 .div-avatar {
     background-color:#151956;
     border-radius: 50%;
-    width: 32%;
-    height: 25%;
+    width: 30%;
+    height: 100%;
     overflow: hidden;
     position: relative;
     transform: scale(1.3);
@@ -72,6 +109,8 @@ html, body {
     margin: 0 auto;
 }
 
+
+/* Estilização redes sociais */
 
 
 .fa-instagram  {
@@ -114,23 +153,100 @@ html, body {
      
  } 
 
+
+ /* Estilização logo tecnologias */
+
+.fa-html5 {
+    color: white;
+    font-size: 55px;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.fa-html5:hover {
+    color: #e34f27;
+}
+
+.fa-css3-alt {
+    color: white;
+    font-size: 55px;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.fa-css3-alt:hover {
+    color: #0070ba;
+}
+
+.fa-js-square {
+    color: white;
+    font-size: 55px;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.fa-js-square:hover {
+    color: #f7df1d;
+}
+
+
+ /* Estilização H2(nome) e p(textos e fonteAwsome */
+
 h2 {
     font-family: Lato, sans-serif;
     color: #6890b6;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 8px;
 }
 
-p{
+.sobre-info > p{
     font-family: Lato, sans-serif;
     color: #6890b6;
-    font-size: 10px;
+    font-size: 15px;
     text-align: center;
     margin: 0 auto;
 }
 
-.icone-rs {
-    margin: 20px;
+.html > p{
+    margin: 0;
+    padding-left: 25px; 
+    font-family: Lato, sans-serif;
+    color: #6890b6;
+    font-size: 15px;
 }
+
+.html > p > progress {
+    width: 100px;
+}
+
+.css > p{
+    margin: 0;
+    padding-left: 25px; 
+    font-family: Lato, sans-serif;
+    color: #6890b6;
+    font-size: 15px;
+}
+
+.css > p > progress {
+    width: 100px;
+}
+
+.js > p{
+    margin: 0;
+    padding-left: 25px; 
+    font-family: Lato, sans-serif;
+    color: #6890b6;
+    font-size: 15px;
+}
+
+.js > p > progress {
+    width: 100px;
+}
+
+
+
+
+
+
