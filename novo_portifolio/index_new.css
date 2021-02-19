@@ -1,36 +1,40 @@
-html, body {
+/* html, body {
     width: 0;
-    height: 0;
-    background: #151956;
+    height: 0;  
+    background: #151956; 
     margin-top: 8vh;
-    margin-left: 9vw;
+    margin-left: 9vw;   
 
+}    */
 
-}   
+body{
+    background: linear-gradient(to right, #30fb95, #fd8733, #2192fc, #30fb95);    /* #242424, #3e405e, #242424 */
+    margin-top: 15vh;
+    margin-left: 18vw; 
+}
 
 .container {
     display: grid;
     width: 65vw;
     height: 65vh;
-    margin: 15%;
+    margin: 0%;
 
-    grid-template-columns: 35fr 25fr 25fr 25fr;
+    grid-template-columns: 28fr 25fr 25fr 25fr;
     grid-template-rows: 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
 
     /* grid-gap: 5px; */
 
-    grid-template-areas: ". . l l"
-                         "s t t t"
-                         "s t t t"
-                         "i t t t"
-                         "m t t t"
-                         "m p p p"
-                         "m p p p"
-                         "m p p p"
-                         "r p p p"
-                         "r p p p";
+    grid-template-areas: ". . . ."
+                         "s t p p"
+                         "s t p p"
+                         "i t p p"
+                         "m t p p"
+                         "m t p p"
+                         "m t p p"
+                         "m t p p"
+                         "r t p p"
+                         "r t p p";
 }
-
 
 /* Estilização div's sobre */
 
@@ -53,7 +57,8 @@ html, body {
 }
 
 .icone-rs > p {
-    padding-top: 3vh;
+    padding-top: 1.5vh;
+    font-size: 20px;
     position: relative;
     text-align: center;
 }
@@ -61,22 +66,20 @@ html, body {
 .rodape-sobre {
     grid-area: r;
     background: white;
-    border-bottom-left-radius: 15px;
 }
 
 /* Estilização Div's sobre tecnologias e projetos */
 
 .tec { 
     grid-area: t;
-    border-top-right-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.3);
     position: relative;
 }
 
 .projetos { 
     grid-area: p;
     border-bottom-right-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.3);
     position: relative;
 }
 
