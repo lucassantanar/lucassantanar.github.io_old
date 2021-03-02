@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #121214;
+}
+
+.containerr {
+    width: 100%;
+    height: 100%;
+    background: #121214;
+
+    display: grid;
+    grid-template-columns: 3fr 3.5fr 0.4fr 4fr 4fr 3fr;
+    grid-template-rows: 10fr 30fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+
+    grid-template-areas: "h h h h h h"
+                         ". . . . . ."
+                         ". . . s l ."
+                         ". c . s l ."
+                         ". c . s l ."
+                         ". c . s l ."
+                         ". c . s l ."
+                         ". c . s l ."
+                         ". c . . . ."
+                         ". c . p p ."
+                         ". c . p p ."
+                         ". c . p p ."
+                         ". . . p p ."
+                         ". . . p p ."
+                         ". . . p p ."
+                         ". . . p p ."
+                         ". . . . . ."
+                         ". . . . . ."
+                         ". . . . . ."
+                         ". . . f f .";
+}
+
+.header {
+    grid-area: h;
+    background: #43404D;
+}
+
+.card-principal {
+    grid-area: c;
+    background: linear-gradient(180deg, rgba(4, 211, 97, 0.5) 0%, rgba(11, 112, 58, 0.5) 27.08%, rgba(18, 18, 20, 0.5) 100%), #201F24;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.sobre {
+    grid-area: s;
+    background: #201F24;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.skill {
+    grid-area: l;
+    background: #201F24;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 15px 15px 0px;
+}
+
+.projetos {
+    grid-area: p;
+    background: #201F24;
+    border-radius: 15px;
+}
+
+.footer {
+    grid-area: f;
+    background: #43404D;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+}
+
+.header > p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 66px;
+    line-height: 77px;
+    padding-left: 45px;
+    color: #04D361;
+}
+
+.footer > p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FCFCFC;
+    padding-top: 6px;
+}
+
+.sobre > p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    color: #FCFCFC;
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 15px;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 45px;
+    color: #FFFFFF;
+}
+
+.dev {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-weight: normal;
+    font-size: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.avatar {
+    background-color: #04D361; 
+    border-radius: 50%;
+    width: 98%;
+    height: 98%;
+    overflow: hidden;
+    position: relative;
+    margin: 1px solid #04D361;
+    padding-top: 1.1%;
+    padding-left: 1.1%;
+}
+
+.div-avatar {
+    background-color:#04D361;;
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    overflow: hidden;
+    position: relative;
+    transform: scale(1.6);
+    box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+    margin: 0 auto;
+}

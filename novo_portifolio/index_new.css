@@ -8,7 +8,7 @@
 }    */
 
 body{
-    background: linear-gradient(to right, #30fb95, #fd8733, #2192fc, #30fb95);    /* #242424, #3e405e, #242424 */
+    background: #121214; /*linear-gradient(to right, #30fb95, #fd8733, #2192fc, #30fb95);    #242424, #3e405e, #242424 */
     margin-top: 15vh;
     margin-left: 18vw; 
 }
@@ -20,7 +20,7 @@ body{
     margin: 0%;
 
     grid-template-columns: 28fr 25fr 25fr 25fr;
-    grid-template-rows: 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+    /* grid-template-rows: 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr; */
 
     /* grid-gap: 5px; */
 
