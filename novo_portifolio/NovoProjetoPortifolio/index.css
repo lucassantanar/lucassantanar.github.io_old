@@ -11,6 +11,81 @@ body {
     background-color: #121214;
 }
 
+/* Estilização dispositivos moveis */
+
+@media (max-width: 600px)
+{
+    .containerr {
+        width: 100%;
+        height: 100%;
+        background: #121214;
+        padding-top: 115px;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .card-principal {
+        position: absolute;
+        height: 378px;
+        top: 25%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .sobre {
+        position: absolute;
+        height: 330px;
+        top: 590px;
+        background: #201F24;
+        border-radius: 15px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .skill {
+        position: absolute;
+        height: 330px;
+        width: 90%;
+        top: 950px;
+        background: #201F24;
+        border-radius: 15px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .projetos {
+        position: absolute;
+        height: 638px;
+        top: 1310px;
+        width: 90%;
+        background: #201F24;
+        border-radius: 15px;
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 1;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 43px;
+        width: 77%;
+        height: 35px;
+        background-color: #43404C;
+        border-radius: 15px 15px 0px 0px;
+        margin-top: 15px;
+    }
+
+    .div-avatar {
+        width: 40%;
+    }
+
+}
+
 .containerr {
     width: 100%;
     height: 100%;
@@ -42,8 +117,36 @@ body {
                          ". . . f f .";
 }
 
+.avatar {
+    background-color: #04D361; 
+    border-radius: 50%;
+    width: 98%;
+    height: 98%;
+    overflow: hidden;
+    position: relative;
+    margin: 1px solid #04D361;
+    padding-top: 1.1%;
+    padding-left: 1.1%;
+}
+
+.div-avatar {
+    background-color:#04D361;;
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    overflow: hidden;
+    position: relative;
+    transform: scale(1.6);
+    box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+    margin: 0 auto;
+}
+
+
 .header {
-    grid-area: h;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    z-index: auto;
     background: #43404D;
 }
 
@@ -71,6 +174,7 @@ body {
     grid-area: p;
     background: #201F24;
     border-radius: 15px;
+    clear: both;
 }
 
 .footer {
@@ -92,13 +196,18 @@ body {
     color: #04D361;
 }
 
-.footer > p {
+.footer > a > p {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
+    font-weight: 300;
+    font-size: 20px;
     color: #FCFCFC;
     padding-top: 6px;
+    
+}
+
+.footer > a {
+    text-decoration: none;
 }
 
 .sobre > p {
@@ -108,7 +217,34 @@ body {
     color: #FCFCFC;
     text-align: justify;
     padding-left: 25px;
-    padding-right: 15px;
+    padding-right: 15px;   
+}
+
+.projeto1 {
+    width: 11%;
+    height: 20%;
+    position: absolute;
+    left: 815px;
+    top: 550px;
+    background: red;
+}
+
+.projeto2 {
+    width: 11%;
+    height: 20%;
+    position: absolute;
+    left: 1056px;
+    top: 550px;
+    background: green;
+}
+
+.projeto3 {
+    width: 11%;
+    height: 20%;
+    position: absolute;
+    left: 1300px;
+    top: 550px;
+    background: #AEAEAE;
 }
 
 h5 {
@@ -165,4 +301,84 @@ h2 {
     transform: scale(1.6);
     box-shadow: 0 0 15px rgb(0 0 0 / 30%);
     margin: 0 auto;
+}
+
+.icone-rs > p{
+    text-align: center;
+    padding-top: 3%;
+}
+
+/* Redes sociais */
+
+.fa-instagram  {
+    color:#ffffff;
+    font-size: 5%;
+    
+ }
+ 
+ .fa-instagram:hover  {
+     border-bottom:  20px; 
+     color:#04D361;
+     
+ }
+ 
+ .fa-facebook-square  {
+     color:#ffffff
+  }
+ 
+ .fa-facebook-square:hover  {
+     border-bottom:  20px; 
+     color:#04D361;
+     
+ } 
+ 
+ .fa-linkedin  {
+     color:#ffffff
+ }
+ 
+ .fa-linkedin:hover  {
+     border-bottom:  20px; 
+     color:#04D361;
+     
+ }
+ .fa-github  {
+     color:#ffffff
+  }
+ 
+ .fa-github:hover  {
+     border-bottom:  20px; 
+     color:#04D361;
+     
+ } 
+
+
+ @media (max-width: 600px)
+{
+    .projeto1 {
+        position: absolute;
+        width: 149px;
+        height: 149px;
+        left: 3%;
+        top: 11%;
+        background: red;
+    }
+    
+    .projeto2 {
+        position: absolute;
+        width: 149px;
+        height: 149px;
+        left: 3%;
+        top: 36%;
+        background: green;
+    }
+    
+    .projeto3 {
+        position: absolute;
+        width: 149px;
+        height: 149px;
+        left: 3%;
+        top: 61%;
+        background: #AEAEAE;
+    }
+
 }
